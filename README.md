@@ -8,9 +8,9 @@ Files
 
 ---
 
-* 00_Setup
-* 01_Key_Assignment
-* 02a_Move_By_Translate
-* 02b_Move_By_Force
+1. 00_Setup
+2. 01_Key_Assignment
+3. 02a_Move_By_Translate
+4. 02b_Move_By_Force
 
 ---

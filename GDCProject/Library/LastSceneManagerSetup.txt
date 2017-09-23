@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/02b_Move_By_Force.unity
+- path: Assets/Scenes/04b_Rotating_Around.unity
   isLoaded: 1
   isActive: 1

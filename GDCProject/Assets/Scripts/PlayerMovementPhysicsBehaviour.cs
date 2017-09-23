@@ -9,7 +9,7 @@ using UnityEngine;
  * 
  */
 
-[AddComponentMenu("GDC/Character/MoveByPhysics")]
+[AddComponentMenu("GDC/Character/Move By Physics")]
 public class PlayerMovementPhysicsBehaviour : MonoBehaviour
 {
     /* Instead of setting how fast do we want to move(velocity), we now set how hard do we want to add

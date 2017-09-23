@@ -9,7 +9,7 @@ using UnityEngine;
  * 
  */
 
-[AddComponentMenu("GDC/Character/MoveByTranslate")]
+[AddComponentMenu("GDC/Character/Move By Translate")]
 public class PlayerMovementBehaviour : MonoBehaviour
 {
     /* In order to move a character by updating position, you need player's position vector.

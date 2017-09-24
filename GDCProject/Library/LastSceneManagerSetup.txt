@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/04b_Rotating_Around.unity
+- path: Assets/Session_10_to/Scenes/10_World_Setup.unity
   isLoaded: 1
   isActive: 1

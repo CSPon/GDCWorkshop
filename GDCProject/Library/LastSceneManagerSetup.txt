@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Session_10_to/Scenes/10_World_Setup.unity
+- path: Assets/Session_00_to_09/Scenes/00_to_09_Completed/09_Adding_Sounds.unity
   isLoaded: 1
   isActive: 1

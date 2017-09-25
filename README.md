@@ -28,7 +28,7 @@ Beginner Level
 ```
 Intermediate Level (In Progress)
 1. 10_World_Setup
-2. 11_Door_Mechanism_By_Automation
+2. 11_Door_Mechanism_By_Detection
 3. 12_AI_Attacking_You
 4. 13_Creating_Respawn
 5. 13_Moving_Platform

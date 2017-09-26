@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * GDC Intro to Unity
+ * 
+ * Intro to Script
+ * 
+ */
+
 public class ScriptIntro : MonoBehaviour
 {
     /* Unity divides game into five different stages; Awake, Start, Fixed Update, Update, and Late Update */

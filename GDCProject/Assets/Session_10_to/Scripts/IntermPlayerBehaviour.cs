@@ -24,14 +24,10 @@ public class IntermPlayerBehaviour : MonoBehaviour
         body = this.gameObject.GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
-    {
-        CheckJump();
-    }
-
     private void Update()
     {
         CheckMove();
+        CheckJump();
     }
 
     private void CheckMove()

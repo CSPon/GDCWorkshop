@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Session_10_to/Scenes/11_Player_Movement.unity
+- path: Assets/Session_10_to/Scenes/14b_Sentry_Turret.unity
   isLoaded: 1
   isActive: 1

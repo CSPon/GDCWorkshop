@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4787439597026928}
   - component: {fileID: 135340452553862886}
   - component: {fileID: 114292628665438532}
+  - component: {fileID: 114598008524550934}
   m_Layer: 0
   m_Name: prop_sentry
   m_TagString: Untagged
@@ -69,7 +70,7 @@ GameObject:
   - component: {fileID: 4831026958689018}
   - component: {fileID: 95700371505358172}
   - component: {fileID: 54742648862348514}
-  - component: {fileID: 65125893594876296}
+  - component: {fileID: 136680466380639478}
   m_Layer: 0
   m_Name: prop_sentry_gun
   m_TagString: Untagged
@@ -277,7 +278,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1520385365481404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.000009164214, y: -0.000000007450581, z: 0.09659988}
+  m_LocalPosition: {x: -0, y: -0, z: 0.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4246512416395418}
@@ -409,18 +410,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65125893594876296
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1371398657677822}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!95 &95700371505358172
 Animator:
   serializedVersion: 3
@@ -450,9 +439,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  smoothness: 1.5
+  smoothness: 0.5
   muzzlePoint: {fileID: 4460977626233854}
   pivot: {fileID: 4765143798258822}
+--- !u!114 &114598008524550934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095824816978248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c896663903a02a4bafb09a47062b955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1828250233100860, guid: ca892b4d4ce60964fade8e27e991088c, type: 2}
+  muzzlePoint: {fileID: 4460977626233854}
+  fireRate: 5
 --- !u!135 &135340452553862886
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -465,6 +468,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5
   m_Center: {x: 0, y: 0, z: 3.85}
+--- !u!136 &136680466380639478
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371398657677822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.07, z: 0}
 --- !u!137 &137895543286279374
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

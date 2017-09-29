@@ -251,8 +251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  doorOpen: {fileID: 8300000, guid: e5a11f7c6ff142f46913b797c411420a, type: 3}
-  doorClose: {fileID: 8300000, guid: 49ac06cbc37bc9b4d97547cd4ca5d0a2, type: 3}
+  doorOpen: {fileID: 8300000, guid: 4a95f2b0fdaa71845872f11a29c07772, type: 3}
+  doorClose: {fileID: 8300000, guid: f98ee312d0846134e88a37feff7beabf, type: 3}
 --- !u!135 &135425915238063296
 SphereCollider:
   m_ObjectHideFlags: 1

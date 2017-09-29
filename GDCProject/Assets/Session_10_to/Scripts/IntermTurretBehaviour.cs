@@ -19,6 +19,7 @@ public class IntermTurretBehaviour : MonoBehaviour
 
     private Vector3 relPos;
     private Animator anim;
+    private bool hasTarget;
 
     private void Awake()
     {
@@ -27,15 +28,8 @@ public class IntermTurretBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (anim.GetBool("hasTarget") && CanSee())
-        {
-            anim.enabled = false;
+        if (hasTarget)
             LookAt();
-        }
-        else
-        {
-            anim.enabled = true;
-        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,6 +39,8 @@ public class IntermTurretBehaviour : MonoBehaviour
             relPos = player.position - muzzlePoint.position;
             if (CanSee())
             {
+                hasTarget = true;
+                anim.enabled = false;
                 anim.SetBool("hasTarget", true);
             }
         }
@@ -54,6 +50,8 @@ public class IntermTurretBehaviour : MonoBehaviour
     {
         if (other.transform == player)
         {
+            hasTarget = true;
+            anim.enabled = false;
             relPos = player.position - muzzlePoint.position;
             anim.SetBool("hasTarget", CanSee());
         }
@@ -62,6 +60,8 @@ public class IntermTurretBehaviour : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         anim.SetBool("hasTarget", false);
+        hasTarget = false;
+        anim.enabled = true;
     }
 
     private bool CanSee()
@@ -85,5 +85,10 @@ public class IntermTurretBehaviour : MonoBehaviour
         Quaternion lookAtRotation = Quaternion.LookRotation(relPos, Vector3.up);
 
         pivot.rotation = Quaternion.Lerp(pivot.rotation, lookAtRotation, smoothness * Time.deltaTime);
+    }
+
+    public bool HasTarget()
+    {
+        return hasTarget;
     }
 }

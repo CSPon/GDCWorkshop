@@ -108,6 +108,11 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &18020860 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4460977626233854, guid: 49d7ff2f67c2cff4ab5ab420adbb32e3,
+    type: 2}
+  m_PrefabInternal: {fileID: 424989887}
 --- !u!1001 &19893782
 Prefab:
   m_ObjectHideFlags: 0
@@ -407,8 +412,18 @@ Prefab:
     - target: {fileID: 114292628665438532, guid: 49d7ff2f67c2cff4ab5ab420adbb32e3,
         type: 2}
       propertyPath: smoothness
-      value: 100
+      value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114292628665438532, guid: 49d7ff2f67c2cff4ab5ab420adbb32e3,
+        type: 2}
+      propertyPath: muzzlePoint
+      value: 
+      objectReference: {fileID: 18020860}
+    - target: {fileID: 114292628665438532, guid: 49d7ff2f67c2cff4ab5ab420adbb32e3,
+        type: 2}
+      propertyPath: pivot
+      value: 
+      objectReference: {fileID: 518794795}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49d7ff2f67c2cff4ab5ab420adbb32e3, type: 2}
   m_IsPrefabParent: 0
@@ -464,6 +479,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4630299381219708, guid: afd7e6b4c4333244d903b6b4c1793dd6,
     type: 2}
   m_PrefabInternal: {fileID: 456135221}
+--- !u!4 &518794795 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4765143798258822, guid: 49d7ff2f67c2cff4ab5ab420adbb32e3,
+    type: 2}
+  m_PrefabInternal: {fileID: 424989887}
 --- !u!1001 &867792658
 Prefab:
   m_ObjectHideFlags: 0

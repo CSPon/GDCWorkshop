@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 222}
   m_MaxSize: {x: 4000, y: 4022}
   vertical: 0
-  controlID: 2826
+  controlID: 36
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 47
+  controlID: 11
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,8 +159,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 573
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -213,7 +213,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &10
 MonoBehaviour:
@@ -276,10 +276,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 947
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 48
+  controlID: 12
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,10 +300,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 573
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 49
+  controlID: 13
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -414,19 +414,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Session_10_to/Prefabs
+    - Assets/Session_00_to_09
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Session_10_to/Prefabs
+  - Assets/Session_00_to_09
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Unity Projects\GDCProject
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 16}
-    m_SelectedIDs: 50260000
-    m_LastClickedID: 9808
-    m_ExpandedIDs: 000000003426000078260000d2260000d4260000082f000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ea270000
+    m_LastClickedID: 10218
+    m_ExpandedIDs: 0000000064270000802700008e270000ea270000f02700005e2a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,7 +454,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003426000078260000d2260000d4260000
+    m_ExpandedIDs: 0000000064270000802700008e270000f02700005e2a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -485,18 +485,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c62300006026000018700000e4260000064dfcff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: ItermTurretFireBehaviour
-      m_OriginalName: ItermTurretFireBehaviour
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 25428
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
@@ -570,28 +570,28 @@ MonoBehaviour:
     height: 552
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 861cfeff
-    m_LastClickedID: -123770
-    m_ExpandedIDs: 2ed9fdff4c1cfeff4e1cfeff581cfeff641cfeff721cfeff841cfeff861cfeffb41cfeffe04dfeffe24dfeffec4dfefff84dfeff064efeff184efeff484efeff5663ffffee64ffff8466ffff9267ffffb268ffffd269fffff26affff126cffff326dffffecc6ffff02caffffacd1ffffccd2ffffecd3ffff0cd5ffff2cd6ffff4cd7ffff6cd8ffff8cd9ffffacdaffffccdbffffb6dcffffaae2fffffae3ffff1afcffff000000008234000058380000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 68f1ffff38faffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: spawn_bullet
-      m_OriginalName: spawn_bullet
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -205430
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
   m_ExpandedScenes:
-  - 14b_Sentry_Turret
+  - 00_Setup
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.16189203, y: 0.49667493, z: -0.09479753, w: 0.84747505}
     speed: 2
-    m_Value: {x: 0.1618843, y: 0.49665117, z: -0.094793, w: 0.8474345}
+    m_Value: {x: 0.16189203, y: 0.49667495, z: -0.09479753, w: 0.84747505}
   m_Size:
     m_Target: 1.7020831
     speed: 2

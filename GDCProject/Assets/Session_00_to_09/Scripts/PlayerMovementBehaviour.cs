@@ -12,18 +12,18 @@ using UnityEngine;
 [AddComponentMenu("GDC/Intro/Character/Move By Translate")]
 public class PlayerMovementBehaviour : MonoBehaviour
 {
-    /* In order to move a character by updating position, you need player's position vector.
-     * You can have it saved by declaring as variable, or can call everytime when frame is
-     * updated. We will declare Vector variable.
-     */
-    private Vector3 player_position;
-
     /* We want to adjust player's movement speed within the editor; to do so, we declare speed variable
      * as public. There are two ways of having public variables displayed in the editor; as textfield
      * or as textfield with limit slider. We will use limit slider.
      */
     [Range(1.0f, 10.0f)]
     public float player_speed = 1.0f;
+
+    /* In order to move a character by updating position, you need player's position vector.
+     * You can have it saved by declaring as variable, or can call everytime when frame is
+     * updated. We will declare Vector variable.
+     */
+    private Vector3 player_position;
 
     private void Awake()
     {
@@ -63,7 +63,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
         float player_x_pos = horizontal_input * player_speed * Time.deltaTime;
         float player_z_pos = vertical_input * player_speed * Time.deltaTime;
 
-        player_position = new Vector3(player_x_pos, 0, player_z_pos);
+        player_position.Set(player_x_pos, 0, player_z_pos);
 
         this.transform.Translate(player_position);
     }

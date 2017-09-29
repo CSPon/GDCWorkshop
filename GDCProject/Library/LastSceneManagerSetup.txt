@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Session_00_to_09/Completed_Scenes/00_Setup.unity
+- path: Assets/Session_10_to/Completed_Scenes/999.unity
   isLoaded: 1
   isActive: 1

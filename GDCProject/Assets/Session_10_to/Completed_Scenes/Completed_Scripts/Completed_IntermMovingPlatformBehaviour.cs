@@ -5,12 +5,12 @@ using UnityEngine;
 /*
  * GDC Intermediate Unity
  * 
- * Turret Fire Controller
+ * Moving platform
  * 
  */
 
 [AddComponentMenu("GDC/Completed/Intermediate/Props/Moving Platform")]
-public class Completed_ItermMovingPlatformBehaviour : MonoBehaviour
+public class Completed_IntermMovingPlatformBehaviour : MonoBehaviour
 {
     /* Public */
     public Vector3 startPosition, endPosition; /* Start and End */

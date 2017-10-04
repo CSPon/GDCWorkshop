@@ -10,7 +10,7 @@ using UnityEngine;
  */
 
 [AddComponentMenu("GDC/Completed/Intermediate/Props/Turret Controller")]
-public class Completed_ItermTurretFinalBehaviour : MonoBehaviour
+public class Completed_IntermTurretFinalBehaviour : MonoBehaviour
 {
     public GameObject bullet;
     public Transform player;

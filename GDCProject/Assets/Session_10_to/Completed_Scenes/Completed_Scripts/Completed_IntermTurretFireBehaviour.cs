@@ -10,7 +10,7 @@ using UnityEngine;
  */
 
 [AddComponentMenu("GDC/Completed/Intermediate/Props/Turret Fire Controller")]
-public class Completed_ItermTurretFireBehaviour : MonoBehaviour
+public class Completed_IntermTurretFireBehaviour : MonoBehaviour
 {
     /* Public */
     public GameObject bullet;

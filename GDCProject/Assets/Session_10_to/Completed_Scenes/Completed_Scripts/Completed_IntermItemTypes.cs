@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Non-monobehaviour enum type
+ */
 public enum Completed_IntermItemTypes
 {
     item_key = 0,

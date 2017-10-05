@@ -66,6 +66,11 @@ public class Completed_IntermMovingPlatformBehaviour : MonoBehaviour
         CheckDirection();
     }
 
+    /* As far as moving platform concerns, we want to check if platfor is moving towards
+     * end position or start position. We will check this by getting magnitude of current position
+     * and end/start position vector. If our current position is within tolerance, we will start
+     * counting down, and once timer hits required wait time, we will change direction.
+     */
     private void CheckDirection()
     {
         if(direction == 1)

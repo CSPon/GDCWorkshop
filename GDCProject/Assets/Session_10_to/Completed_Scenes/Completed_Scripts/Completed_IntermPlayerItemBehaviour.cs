@@ -20,6 +20,12 @@ public class Completed_IntermPlayerItemBehaviour : MonoBehaviour
     /* Private */
     private Completed_IntermItemBehaviour item;
 
+    /* All items in this project are trigger-based collider. Which means we will handle
+     * all our item interactions in OnTriggerEnter(). First, we want to check
+     * if colliding trigger is item. Next, we will get the type of an item and handle
+     * items based on what type it is. Once handling is done, we can destroy our item
+     * game object.
+     */
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag.Equals("Item"))

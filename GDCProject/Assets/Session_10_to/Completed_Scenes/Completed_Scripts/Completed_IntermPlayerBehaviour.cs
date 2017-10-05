@@ -5,16 +5,18 @@ using UnityEngine;
 /*
  * GDC Intermediate Unity
  * 
- * Player Controller
+ * Combined Player Controller
  * 
  */
 
 [AddComponentMenu("GDC/Completed/Intermediate/Player/Player Movement")]
 public class Completed_IntermPlayerBehaviour : MonoBehaviour
 {
+    /* Public */
     public float movementSpeed = 5.0f;
     public float jumpForce = 100.0f;
 
+    /* Private */
     private Rigidbody body;
     private bool inAir = false;
     private Vector3 playerPos;

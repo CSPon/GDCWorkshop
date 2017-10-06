@@ -14,6 +14,7 @@ public class Completed_IntermDoorBehaviour : MonoBehaviour
 {
     /* Public */
     public bool needKey = false; /* For Scene #17 */
+    public bool needAction = false; /* For Scene #19 */
     public GameObject player; /* To identify who is in trigger area */
     public AudioClip doorOpen, doorClose; /* To play open/close sound */
 
@@ -22,6 +23,8 @@ public class Completed_IntermDoorBehaviour : MonoBehaviour
     private AudioSource doorAudio; /* To play sound when door is opening/closing */
     /* This variable is for Scene #17 */
     private Completed_IntermPlayerItemBehaviour playerItem; /* To check if player has key */
+    public bool triggered = false; /* For Scene #19 */
+    public bool inRange = false;
 
     /* At the beginning, we want to get all our components to use during game.
      */
@@ -30,6 +33,11 @@ public class Completed_IntermDoorBehaviour : MonoBehaviour
         doorAudio = this.gameObject.GetComponent<AudioSource>();
         anim = this.gameObject.GetComponentInChildren<Animator>();
         playerItem = player.GetComponent<Completed_IntermPlayerItemBehaviour>();
+    }
+
+    private void Update()
+    {
+        CheckTrigger();
     }
 
     /* If player enteres trigger area, we want to play our opening animation.
@@ -43,22 +51,68 @@ public class Completed_IntermDoorBehaviour : MonoBehaviour
     {
         if (other.gameObject == player)
         {
-            if(needKey)
-            {
-                if(playerItem.hasKey)
-                {
-                    anim.SetBool("isOpen", true);
+            inRange = true;
 
-                    doorAudio.clip = doorOpen;
-                    doorAudio.Play();
+            if (needAction) /* For Scene #19 */
+            {
+                if(triggered)
+                {
+                    if (needKey)
+                    {
+                        if (playerItem.hasKey)
+                            PlayDoorOpen();
+                    }
+                    else PlayDoorOpen();
                 }
             }
             else
             {
-                anim.SetBool("isOpen", true);
+                if (needKey)
+                {
+                    if (playerItem.hasKey)
+                    {
+                        PlayDoorOpen();
+                    }
+                }
+                else
+                {
+                    PlayDoorOpen();
+                }
+            }
+        }
+    }
 
-                doorAudio.clip = doorOpen;
-                doorAudio.Play();
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject == player)
+        {
+            inRange = true;
+
+            if (needAction) /* For Scene #19 */
+            {
+                if (triggered)
+                {
+                    if (needKey)
+                    {
+                        if (playerItem.hasKey)
+                            PlayDoorOpen();
+                    }
+                    else PlayDoorOpen();
+                }
+            }
+            else
+            {
+                if (needKey)
+                {
+                    if (playerItem.hasKey)
+                    {
+                        PlayDoorOpen();
+                    }
+                }
+                else
+                {
+                    PlayDoorOpen();
+                }
             }
         }
     }
@@ -70,10 +124,33 @@ public class Completed_IntermDoorBehaviour : MonoBehaviour
     {
         if (other.gameObject == player)
         {
-            anim.SetBool("isOpen", false);
-
-            doorAudio.clip = doorClose;
-            doorAudio.Play();
+            triggered = false;
+            inRange = false;
+            PlayDoorClose();
         }
+    }
+
+    private void CheckTrigger()
+    {
+        if (Input.GetKeyUp("f") && inRange)
+        {
+            triggered = true;
+        }
+    }
+
+    private void PlayDoorOpen()
+    {
+        anim.SetBool("isOpen", true);
+
+        doorAudio.clip = doorOpen;
+        doorAudio.Play();
+    }
+
+    private void PlayDoorClose()
+    {
+        anim.SetBool("isOpen", false);
+
+        doorAudio.clip = doorClose;
+        doorAudio.Play();
     }
 }

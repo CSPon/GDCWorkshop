@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Session_10_to/Completed_Scenes/18_Projectiles.unity
+- path: Assets/Session_10_to/Completed_Scenes/19_Action_Based_Door.unity
   isLoaded: 1
   isActive: 1

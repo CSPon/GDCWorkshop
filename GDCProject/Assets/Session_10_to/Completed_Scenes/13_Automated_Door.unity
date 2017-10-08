@@ -198,7 +198,8 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114366834470583068, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &331057426 stripped
@@ -206,6 +207,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4859260668873402, guid: 6d0ad760be178ac44929169ff3a75649,
     type: 2}
   m_PrefabInternal: {fileID: 331057425}
+--- !u!1 &331057427 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1554386829030708, guid: 6d0ad760be178ac44929169ff3a75649,
+    type: 2}
+  m_PrefabInternal: {fileID: 331057425}
+--- !u!114 &331057428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331057427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e782dad884ae246931481a837af804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1688597395}
+  doorOpen: {fileID: 8300000, guid: cb23c960d10436349868cff2877ee6dc, type: 3}
+  doorClose: {fileID: 8300000, guid: ae9d2443bba21464681dbcee50dcd12b, type: 3}
+  requireKey: 0
 --- !u!1 &380428454
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,9 +420,30 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1688597395}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114366834470583068, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1370029454 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1554386829030708, guid: 6d0ad760be178ac44929169ff3a75649,
+    type: 2}
+  m_PrefabInternal: {fileID: 1370029453}
+--- !u!114 &1370029455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1370029454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e782dad884ae246931481a837af804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1688597395}
+  doorOpen: {fileID: 8300000, guid: cb23c960d10436349868cff2877ee6dc, type: 3}
+  doorClose: {fileID: 8300000, guid: ae9d2443bba21464681dbcee50dcd12b, type: 3}
+  requireKey: 0
 --- !u!1001 &1688597394
 Prefab:
   m_ObjectHideFlags: 0

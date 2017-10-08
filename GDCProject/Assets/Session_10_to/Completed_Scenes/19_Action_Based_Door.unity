@@ -981,7 +981,8 @@ Prefab:
       propertyPath: needAction
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114366834470583068, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &640620238 stripped
@@ -989,6 +990,27 @@ Transform:
   m_PrefabParentObject: {fileID: 4859260668873402, guid: 6d0ad760be178ac44929169ff3a75649,
     type: 2}
   m_PrefabInternal: {fileID: 640620237}
+--- !u!1 &640620239 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1554386829030708, guid: 6d0ad760be178ac44929169ff3a75649,
+    type: 2}
+  m_PrefabInternal: {fileID: 640620237}
+--- !u!114 &640620240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640620239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e782dad884ae246931481a837af804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 169668448}
+  doorOpen: {fileID: 8300000, guid: cb23c960d10436349868cff2877ee6dc, type: 3}
+  doorClose: {fileID: 8300000, guid: ae9d2443bba21464681dbcee50dcd12b, type: 3}
+  requireKey: 1
+  requireAction: 1
 --- !u!1001 &659648855
 Prefab:
   m_ObjectHideFlags: 0
@@ -1332,7 +1354,8 @@ Prefab:
       propertyPath: needKey
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114366834470583068, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6d0ad760be178ac44929169ff3a75649, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1355699889 stripped
@@ -1340,6 +1363,27 @@ Transform:
   m_PrefabParentObject: {fileID: 4859260668873402, guid: 6d0ad760be178ac44929169ff3a75649,
     type: 2}
   m_PrefabInternal: {fileID: 1355699888}
+--- !u!1 &1355699890 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1554386829030708, guid: 6d0ad760be178ac44929169ff3a75649,
+    type: 2}
+  m_PrefabInternal: {fileID: 1355699888}
+--- !u!114 &1355699891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1355699890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e782dad884ae246931481a837af804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 169668448}
+  doorOpen: {fileID: 8300000, guid: cb23c960d10436349868cff2877ee6dc, type: 3}
+  doorClose: {fileID: 8300000, guid: ae9d2443bba21464681dbcee50dcd12b, type: 3}
+  requireKey: 1
+  requireAction: 0
 --- !u!1 &1508248485
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,7 +32,11 @@ public class Completed_IntermPlayerRespawnBehaviour : MonoBehaviour
      */
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Item_Damage"))
+        if (collision.gameObject.CompareTag("Item_Damage"))
+        {
+            player.position = current_respawn_pos;
+        }
+        else if (collision.gameObject.CompareTag("Enemy"))
         {
             player.position = current_respawn_pos;
         }

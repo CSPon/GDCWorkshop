@@ -15,6 +15,7 @@ public class Completed_IntermPlayerBehaviour : MonoBehaviour
     /* Public */
     public float movementSpeed = 5.0f;
     public float jumpForce = 100.0f;
+    public Completed_IntermBarGUIBehaviour health; /* Scene #21 */
 
     /* Private */
     private Rigidbody body;
@@ -28,8 +29,11 @@ public class Completed_IntermPlayerBehaviour : MonoBehaviour
 
     private void Update()
     {
-        CheckMove();
-        CheckJump();
+        if(!health.isDead)
+        {
+            CheckMove();
+            CheckJump();
+        }
     }
 
     private void CheckMove()

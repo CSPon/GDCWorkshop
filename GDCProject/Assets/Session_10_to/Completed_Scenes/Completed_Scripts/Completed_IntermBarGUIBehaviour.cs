@@ -12,41 +12,50 @@ using UnityEngine;
 [AddComponentMenu("GDC/Completed/Intermediate/GUIs/Bar Gauge")]
 public class Completed_IntermBarGUIBehaviour : MonoBehaviour
 {
-    private float minValue = 20;
-    private float maxValue = 600;
+    public float health = 600;
     public float decreaseRate = 1;
-
     public float decreaseInterval = 0.5f;
-    private float counter = 0;
+    public bool isDead = false;
 
+    private float counter = 0;
     private Transform bar;
+    private Renderer barColor;
+    private Color healthColor;
 
     private void Awake()
     {
         bar = this.transform;
+        barColor = this.gameObject.GetComponentInChildren<Renderer>();
+
+        barColor.material.color = Color.green;
     }
 
     private void UpdateBar()
     {
         Vector3 scale = bar.localScale;
-        scale.x -= decreaseRate;
 
-        if(scale.x > minValue)
-            bar.localScale = scale;
-        else
-        {
-            scale.x = minValue;
-            bar.localScale = scale;
-        }
+        health -= decreaseRate;
+        if (health < 0)
+            isDead = true;
+
+        healthColor = Color.Lerp(Color.red, Color.green, health / 600.0f);
+
+        scale.x = 20 + health;
+
+        bar.localScale = scale;
+        barColor.material.color = healthColor;
     }
 
     private void Update()
     {
-        if (counter > decreaseInterval)
+        if(!isDead)
         {
-            UpdateBar();
-            counter = 0;
+            if (counter > decreaseInterval)
+            {
+                UpdateBar();
+                counter = 0;
+            }
+            else counter += Time.deltaTime;
         }
-        else counter += Time.deltaTime;
     }
 }

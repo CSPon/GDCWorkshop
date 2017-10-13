@@ -29,7 +29,7 @@ public class Completed_IntermPlayerBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if(!health.isDead)
+        if(!health.isDead) /* For Scene #21 */
         {
             CheckMove();
             CheckJump();

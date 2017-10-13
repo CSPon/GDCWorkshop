@@ -36,13 +36,16 @@ public class Completed_IntermAutoDoorBehaviour : MonoBehaviour
         playerItem = player.GetComponent<Completed_IntermPlayerItemBehaviour>();
     }
 
+    /* When player enters door trigger, we need to check if is player.
+     * Instead of directly playing animation, we will add counter.
+     */
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
         {
-            if(!requireAction)
+            if(!requireAction) /* Skip until Scene #19 */
             {
-                if (requireKey)
+                if (requireKey) /* Skip until Scene #17 */
                 {
                     if (playerItem.hasKey)
                         counter++;
@@ -53,6 +56,9 @@ public class Completed_IntermAutoDoorBehaviour : MonoBehaviour
         }
     }
 
+    /* Instead of subtracting directly, we will check maximum value between
+     * zero and counter - 1.
+     */
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject == player)
@@ -80,6 +86,8 @@ public class Completed_IntermAutoDoorBehaviour : MonoBehaviour
         }
     }
 
+    /* If counter is positive, we will play animation.
+     */
     private void Update()
     {
         anim.SetBool("isOpen", counter > 0);

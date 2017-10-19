@@ -14,8 +14,20 @@ public class Completed_IntermPlayerItemBehaviour : MonoBehaviour
 {
     /* Public */
     public bool hasKey = false;
-    public int score = 0;
-    public int health = 0;
+
+    /* Change after Scene #21 */
+    private int score = 0;
+    private int health = 0;
+    public int Score
+    {
+        get { return score; }
+        set { score = value; }
+    }
+    public int Health
+    {
+        get { return health; }
+        set { health = value; }
+    }
 
     /* Private */
     private Completed_IntermItemBehaviour item;
@@ -36,10 +48,10 @@ public class Completed_IntermPlayerItemBehaviour : MonoBehaviour
                 case Completed_IntermItemTypes.item_key:
                     hasKey = true; break;
                 case Completed_IntermItemTypes.item_health:
-                    health += item.GetItemProperty();
+                    Health = Health + item.GetItemProperty();
                     break;
                 case Completed_IntermItemTypes.item_score:
-                    score += item.GetItemProperty();
+                    Score = Score + item.GetItemProperty();
                     break;
             }
 
